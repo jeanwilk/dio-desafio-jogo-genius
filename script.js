@@ -28,14 +28,14 @@ let shuffleOrder = () => {
 
 // Função para acender a cor
 let lightColor = (element, number) => {
-    number = number * 500;
+    number = number * 700;
     setTimeout(() => {
         element.classList.add('selected');
-    }, number - 250);
+    }, number - 350);
 
     setTimeout(() => {
         element.classList.remove('selected');
-    });
+    }, number + 350);
 }
 
 //Função para verificar se os botões clicados são os mesmos da ordem gerada no jogo

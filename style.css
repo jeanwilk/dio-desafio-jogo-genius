@@ -24,28 +24,47 @@ body {
 
 .blue {
     grid-area: azul;
-    background-color: blue;
+    background-color: rgb(0, 0, 104);
     border-bottom-right-radius: 100%;
+    cursor: pointer;
 }
 
 .red {
     grid-area: vermelho;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.705);
     border-top-right-radius: 100%;
+    cursor: pointer;
 }
 
 .yellow {
     grid-area: amarelo;
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.822);
     border-bottom-left-radius: 100%;
+    cursor: pointer;
 }
 
 .green {
     grid-area: verde;
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.74);
     border-top-left-radius: 100%;
+    cursor: pointer;
 }
 
 .selected {
     opacity: 0.4;
+}
+
+/* Responsivo */
+@media screen and (max-width: 390px) {
+    .genius {
+      width: 250px;
+      height: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .genius {
+        width: 450px;
+        height: 450px;
+    }
 }
